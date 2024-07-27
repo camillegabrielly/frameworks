@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .negrito {
+            font-weight: bold;
+        }
+    </style>
+
+    <h1><b>TEXTO - PALESTRA</b></h1>
+
+    <div>
+        <h2><b>Dicas para seguir no mercado de trabalho na programação:</b></h2>
+        <p  id="paragrafo1">
+            - saber inglês
+            <br>
+            - saber javascript
+            <br>
+            - ter boa comunicação
+            <br>
+            - ter um bom currículo (github e linkedin)
+            <br>
+            <br>
+            
+            Para se destacar e ter sucesso no mercado de trabalho na área de programação, seguir algumas dicas pode ser muito útil:
+            Dominar uma Linguagem de Programação: É fundamental ter um domínio sólido de pelo menos uma linguagem de programação. Escolha uma linguagem relevante para o mercado em que deseja atuar. 
+            <br>
+            Fluência em Inglês: O inglês é amplamente utilizado na documentação técnica, fóruns de desenvolvedores, tutoriais e recursos online. Ter fluência no idioma permite acessar e compreender uma vasta gama de recursos, além de facilitar a comunicação com colegas internacionais e participação em projetos globais.
+            <br>
+            Conhecimento em JavaScript: JavaScript é uma das linguagens mais populares para desenvolvimento web e móvel. Conhecê-la bem é altamente valorizado, ampliando suas oportunidades no mercado.
+            <br>
+            Habilidades de Comunicação: A capacidade de comunicar-se de forma clara e eficaz é essencial. Isso inclui não apenas expressar ideias técnicas de maneira compreensível, mas também saber colaborar em equipes, apresentar projetos e entender as necessidades dos usuários finais. 
+            </p>
+        <button onclick="onClickAlterar1()">alterar texto</button>
+    </div>
+
+    <div>
+        <h2><b>Diferenças entre os níveis de cargo na progamação:</b></h2>
+        <p id="paragrafo2">
+            Na área da programação, os termos júnior, pleno e sênior são amplamente utilizados para categorizar o nível de experiência e habilidade de um profissional. Cada uma dessas categorias representa diferentes estágios de desenvolvimento profissional e competência técnica, refletindo não apenas o conhecimento técnico, mas também a capacidade de resolver problemas complexos e trabalhar de forma independente ou em equipes.
+            <br>
+            <br>
+            Desenvolvedor Júnior:
+            Um desenvolvedor júnior é geralmente alguém no início da carreira ou com pouca experiência prática em programação
+            <br>
+            Desenvolvedor Pleno:
+            Os desenvolvedores plenos são profissionais que já possuem um conhecimento mais sólido e uma experiência prática substancial na área de programação. Eles demonstram habilidades avançadas em uma ou mais linguagens de programação. Além das hard skills técnicas, os desenvolvedores plenos desenvolvem soft skills como capacidade de resolução de problemas, colaboração eficaz e gerenciamento de projetos. 
+            <br>
+            Desenvolvedor Sênior:
+            Os desenvolvedores seniores são considerados especialistas em sua área, com vasta experiência e profundo conhecimento técnico. Eles possuem um histórico comprovado de entrega de projetos bem-sucedidos e são capazes de liderar equipes, mentorear desenvolvedores mais jovens e tomar decisões estratégicas. Eles são frequentemente consultados para resolver problemas complexos e contribuir para a inovação dentro da organização.
+            </p>
+        <button onclick="onClickAlterar2()">tranformar em negrito</button>
+    </div>
+
+    <div>
+        <h2><b>Habilidades necessárias no ambiente de trabalho: soft skills e hard skills</b></h2>
+        <p id="paragrafo3">
+            As hard skills, frequentemente associadas ao conhecimento técnico e habilidades específicas adquiridas através da educação formal ou treinamento prático. Por exemplo, habilidades em programação, fluência em idiomas, conhecimento em matemática ou habilidades operacionais em máquinas. Estas habilidades são geralmente adquiridas através de treinamento direto e prático, e são essenciais para desempenhar tarefas específicas dentro de um campo de trabalho.
+            <br>
+            Por outro lado, as soft skills referem-se às habilidades interpessoais, sociais e emocionais que influenciam a forma como uma pessoa interage com os outros. Como exemplos, incluem a capacidade de comunicação eficaz, trabalho em equipe, empatia, resolução de conflitos, liderança e habilidades de negociação.
+            </p>
+        <button onclick="onClickAlterar3()">apagar</button>
+    </div>
+
+</body>
+</html>
+
+<script>
+    function onClickAlterar1(){
+        var paragrafo1 = document.getElementById('paragrafo1').innerHTML='saber uma linguagem de programação, saber inglês, saber javascript, ter boa comunicação e ter um bom currículo (github e linkedin)';
+    }
+
+    function onClickAlterar2(){
+        var paragrafo2 = document.getElementById('paragrafo2');
+        paragrafo2.classList.add('negrito');
+    }
+
+    function onClickAlterar3(){
+        var paragrafo3 = document.getElementById('paragrafo3').innerHTML='';
+    }
+</script>
+
